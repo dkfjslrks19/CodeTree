@@ -1,10 +1,8 @@
-word = input().split()
-word1 = word[0]
-word2 = word[1]
+word1, word2 = input().split()
 
 if len(word1)>len(word2):
-    print('Coding',len(word1))
+    print(word1,len(word1))
 elif len(word1)<len(word2):
-    print('Coding',len(word2))
+    print(word2,len(word2))
 else:
     print('same')

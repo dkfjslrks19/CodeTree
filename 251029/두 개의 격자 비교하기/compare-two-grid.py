@@ -1,7 +1,7 @@
 n,m = map(int,input().split())
-arr1=[list(map(int,input().split()))[:n] for _ in range(m)]
-arr2=[list(map(int,input().split()))[:n] for _ in range(m)]
-arr = [[0 for _ in range(n)] for _ in range(m)]
+arr1=[list(map(int,input().split()))[:m] for _ in range(n)]
+arr2=[list(map(int,input().split()))[:m] for _ in range(n)]
+arr = [[0 for _ in range(m)] for _ in range(n)]
 
 for i in range(n):
     for j in range(m):

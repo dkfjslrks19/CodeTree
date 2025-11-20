@@ -1,8 +1,10 @@
 n = int(input())
 
 for i in range(1,n+1):
-    if i%3==0 or i%10==3 or i%10==6 or i%10==9:
-        print(0,end=' ')
+    s = str(i)
+    if i%3==0 or '3' in s or '6' in s or '9' in s:
+        print(0, end=' ')
     else:
         print(i,end=' ')
+    
     

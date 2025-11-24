@@ -7,5 +7,5 @@ while True:
         break
     total += age
     cnt +=1
-
-print(f'{total/cnt:.2f}')
+if cnt > 0:    
+    print(f'{total/cnt:.2f}')

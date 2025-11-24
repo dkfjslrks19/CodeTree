@@ -1,14 +1,9 @@
-total = 0
-cnt = 0
+ages = []
 
 while True:
     age = int(input())
     if age >= 30:
         break
-    total += age
-    cnt += 1
+    ages.append(age)
 
-if cnt == 0:
-    print("0.00")    # 문제에서 원하는 형식으로 바꿔도 됨
-else:
-    print(f'{total/cnt:.2f}')
+print(f"{sum(ages)/len(ages):.2f}")

@@ -1,9 +1,11 @@
-ages = []
+total = 0
+cnt = 0
 
 while True:
     age = int(input())
-    if age >= 30:
+    if not (20 <= age <= 29):   # 20대가 아니면 즉시 종료
         break
-    ages.append(age)
+    total += age
+    cnt += 1
 
-print(f"{sum(ages)/len(ages):.2f}")
+print(f"{total/cnt:.2f}")
